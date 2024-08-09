@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SuitMediaApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.SuitMediaApp" parent="Base.Theme.SuitMediaApp" />
+
+    <style name="activityhome" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/hijau_buttom</item>
+        <item name="background">@drawable/bgsuit</item>
+        <item name="android:windowBackground">@drawable/bgsuit</item>
+    </style>
+
+    <style name="activitysecondsreen" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

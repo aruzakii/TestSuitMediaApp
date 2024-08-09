@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="@color/hijau_buttom"
+        android:src="@drawable/profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/white"
+        android:paddingStart="16dp"
+        android:hint="NAME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/inputPalindrom"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/white"
+        android:paddingStart="16dp"
+        android:hint="PALINDROM"
+        app:layout_constraintEnd_toEndOf="@+id/inputName"
+        app:layout_constraintStart_toStartOf="@+id/inputName"
+        app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+
+    <Button
+        android:id="@+id/check_but"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/hijau_buttom"
+        android:text="CHECK"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputPalindrom"
+        app:layout_constraintStart_toStartOf="@+id/inputPalindrom"
+        app:layout_constraintTop_toBottomOf="@+id/inputPalindrom" />
+
+    <Button
+        android:id="@+id/next_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/hijau_buttom"
+        android:text="NEXT"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/check_but"
+        app:layout_constraintStart_toStartOf="@+id/inputPalindrom"
+        app:layout_constraintTop_toBottomOf="@+id/check_but" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
